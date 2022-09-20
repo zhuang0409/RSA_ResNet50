@@ -1,7 +1,7 @@
 function A03_runRSA_DNNs(subjectID,foldername) 
 % Run RSA:RN50-49
 % A03_runRSA_DNNs(subjectID,'RNaction44') 
-% A03_runRSA_DNNs(subjectID,'RNobject44') 
+% A03_runRSA_DNNs(subjectID,'RNobject') 
 % 22.06.2022 by Zhuang
 %clc;clear;
 % foldername='RNaction44';
