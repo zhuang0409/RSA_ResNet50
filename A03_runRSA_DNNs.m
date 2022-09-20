@@ -1,4 +1,4 @@
-function A03_runRSA_DNNs(subjectID,foldername) 
+function A03_runRSA_DNNs(subjectID,foldername,layername) 
 % Run RSA:RN50-49
 % A03_runRSA_DNNs(subjectID,'RNaction44') 
 % A03_runRSA_DNNs(subjectID,'RNobject') 
@@ -28,7 +28,7 @@ switch foldername(3:end-2)
         data= readNPY([modeldir,matrixnames(2).name]);
 end
 %dsm=squareform(VGG_reshape_to_fMRI(squeeze(data(53,:,:))));%second last
-dsm=squareform(VGG_reshape_to_fMRI(squeeze(data(44,:,:))));%layer4.0.conv1
+dsm=squareform(VGG_reshape_to_fMRI(squeeze(data(layername,:,:))));%layer4.0.conv1
 
 
 targetID=subjectID;
